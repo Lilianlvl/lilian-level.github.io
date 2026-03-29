@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lilian Level — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">LL<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">Technicien Support &amp; Développeur</p>
+      <h1 class="hero-title">
+        Lilian<br /><span class="accent">Level</span>
+      </h1>
+      <p class="hero-sub">
+        Technicien Support Informatique chez <strong>Eurovanille</strong> — support,
+        automatisation, développement applicatif &amp; sécurité.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">Voir mon parcours</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" id="age-value">—</span>
+          <span class="stat-label">ans</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">+10</span>
+          <span class="stat-label">technologies maîtrisées</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">passionné</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="t-btn t-red"></span>
+        <span class="t-btn t-yellow"></span>
+        <span class="t-btn t-green"></span>
+        <span class="t-title">lilian@eurovanille ~ </span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+        <div class="t-line t-out">Lilian Level — Technicien Support</div>
+        <div class="t-line"><span class="t-prompt">$</span> cat skills.txt</div>
+        <div class="t-line t-out">Support · PowerShell · Power Apps</div>
+        <div class="t-line t-out">Power Automate · Intune · Entra ID</div>
+        <div class="t-line t-out">PHP · HTML · CSS · JavaScript</div>
+        <div class="t-line t-out">Linux · Windows Server · Réseau</div>
+        <div class="t-line"><span class="t-prompt">$</span> <span class="cursor">█</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Défiler vers le bas">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">À <span class="accent">propos</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar" aria-hidden="true">
+          <div class="avatar-ring"></div>
+          <div class="avatar-initials">LL</div>
+          <div class="avatar-badge">
+            <span class="badge-dot"></span> Disponible
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            Technicien support informatique passionné, je travaille chez
+            <strong>Eurovanille</strong>, spécialiste mondial de la vanille.
+            Mon quotidien mêle support utilisateur, déploiement et administration
+            des systèmes d'information.
+          </p>
+          <p>
+            En dehors des heures de bureau, je conçois des <strong>sites web
+            vitrine</strong> en PHP / HTML / CSS / JavaScript, car le développement
+            est avant tout une passion pour moi.
+          </p>
+          <p>
+            J'automatise les tâches répétitives via <strong>Power Automate</strong>
+            et des scripts <strong>PowerShell</strong>, libérant ainsi du temps
+            aux utilisateurs pour qu'ils se concentrent sur l'essentiel.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-icon">🎂</span>
+              <span>29 juillet 2000 · <span id="age-inline">—</span> ans</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Boulogne-sur-Mer (62)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🏢</span>
+              <span>Eurovanille</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <span>Technicien Support Informatique</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Compé<span class="accent">tences</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Support &amp; Infrastructure</h3>
+          <ul>
+            <li>Support utilisateur N1 / N2</li>
+            <li>Microsoft Entra ID (Azure AD)</li>
+            <li>Microsoft Intune — MDM / MAM</li>
+            <li>Déploiement postes &amp; mobiles</li>
+            <li>Gestion des tickets &amp; incidents</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Automatisation &amp; Low-Code</h3>
+          <ul>
+            <li>Microsoft Power Apps</li>
+            <li>Microsoft Power Automate</li>
+            <li>Scripts PowerShell automatisés</li>
+            <li>Optimisation processus métier</li>
+            <li>Reporting &amp; tableaux de bord</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Développement Web &amp; Logiciel</h3>
+          <ul>
+            <li>PHP · JavaScript — web</li>
+            <li>HTML5 / CSS3 — intégration</li>
+            <li>Python · SQL — scripting &amp; data</li>
+            <li>Java · C# — développement logiciel</li>
+            <li>Sites vitrine &amp; responsive</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+          </div>
+          <h3>Réseau &amp; Systèmes</h3>
+          <ul>
+            <li>Administration réseau d'entreprise</li>
+            <li>Serveurs Windows Server</li>
+            <li>Serveurs Linux (Debian / Ubuntu)</li>
+            <li>VPN, VLAN, firewall</li>
+            <li>Active Directory &amp; GPO</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Cybersécurité</h3>
+          <ul>
+            <li>Assistance actions cyber</li>
+            <li>Sensibilisation utilisateurs</li>
+            <li>Gestion des accès &amp; droits</li>
+            <li>Surveillance &amp; alertes</li>
+            <li>Conformité &amp; bonnes pratiques</li>
+          </ul>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Bases de données &amp; DevOps</h3>
+          <ul>
+            <li>MySQL · MariaDB</li>
+            <li>Docker — conteneurisation</li>
+            <li>Nginx · Apache — serveurs web</li>
+            <li>Git · GitHub — versioning</li>
+            <li>VSCode · JetBrains · Visual Studio</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Expé<span class="accent">rience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <h3>Technicien Support Informatique</h3>
+              <span class="tl-company">Eurovanille</span>
+              <span class="tl-date">Oct 2024 → Actuel</span>
+            </div>
+            <p>
+              Support utilisateur N1/N2, administration Microsoft 365, Entra ID et Intune.
+              Développement d'applications métier avec Power Apps, automatisation des flux
+              via Power Automate et scripts PowerShell. Gestion du réseau d'entreprise,
+              mise en place de serveurs Linux et Windows Server, assistance aux actions
+              cyber et optimisation des chaînes de production.
+            </p>
+            <div class="tl-tags">
+              <span>Intune</span><span>Entra ID</span><span>Power Apps</span>
+              <span>Power Automate</span><span>PowerShell</span><span>Linux</span>
+              <span>Windows Server</span><span>Réseau</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="150">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <h3>Technicien en système d'impression</h3>
+              <span class="tl-company">LBS — Littoral Bureautique Système, Outreau</span>
+              <span class="tl-date">2021 → 2024</span>
+            </div>
+            <p>
+              Réparation d'imprimantes multifonctions et photocopieurs. Configuration
+              d'imprimantes en réseau, assistance à distance aux clients, livraison
+              et installation de consommables et matériel.
+            </p>
+            <div class="tl-tags">
+              <span>Matériel</span><span>Réseau</span><span>Assistance à distance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <h3>Alternant — Développeur Web &amp; Mobile Sécurisés</h3>
+              <span class="tl-company">Lycée Saint Joseph Saint Martin, Boulogne</span>
+              <span class="tl-date">2020 → 2021</span>
+            </div>
+            <p>
+              Conception d'une application de gestion d'incidents (PHP, JavaScript,
+              CSS, HTML5, SQL) et déploiement sur serveur Debian. Support utilisateurs,
+              maintenance du matériel informatique et gestion du réseau de l'établissement.
+            </p>
+            <div class="tl-tags">
+              <span>PHP</span><span>JavaScript</span><span>HTML5</span>
+              <span>SQL</span><span>Linux Debian</span><span>Réseau</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="450">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <h3>Stage — Service Informatique</h3>
+              <span class="tl-company">Lycée Saint Joseph Saint Martin, Boulogne</span>
+              <span class="tl-date">2019 → 2020</span>
+            </div>
+            <p>
+              Développement web (PHP, MySQL, HTML, CSS) et maintenance du matériel
+              informatique. Première expérience en environnement professionnel IT.
+            </p>
+            <div class="tl-tags">
+              <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FORMATION ────────────────────────────────────────────── -->
+  <section class="section section-alt" id="formation">
+    <div class="container">
+      <h2 class="section-title">For<span class="accent">mation</span></h2>
+      <div class="formation-grid">
+
+        <div class="formation-card" data-delay="0">
+          <div class="formation-year">2021</div>
+          <div class="formation-body">
+            <h3>Licence Informatique</h3>
+            <p class="formation-spec">Option Développement Web &amp; Mobile</p>
+            <p class="formation-school">CNAM Lille</p>
+          </div>
+          <div class="formation-badge">Bac +3</div>
+        </div>
+
+        <div class="formation-card" data-delay="150">
+          <div class="formation-year">2020</div>
+          <div class="formation-body">
+            <h3>BTS SIO</h3>
+            <p class="formation-spec">Services Informatiques aux Organisations</p>
+            <p class="formation-school">Lycée Saint Joseph Saint Martin, Boulogne</p>
+          </div>
+          <div class="formation-badge">Bac +2</div>
+        </div>
+
+        <div class="formation-card" data-delay="300">
+          <div class="formation-year">2018</div>
+          <div class="formation-body">
+            <h3>BAC Professionnel ELEEC</h3>
+            <p class="formation-spec">Électrotechnique, Énergie, Équipements Communicants</p>
+            <p class="formation-school">Lycée Saint Joseph Saint Martin, Boulogne</p>
+          </div>
+          <div class="formation-badge">Bac Pro</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ─────────────────────────────────────────────── -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Pro<span class="accent">jets</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-delay="0">
+          <div class="project-header">
+            <div class="project-icon">⚡</div>
+            <div class="project-links">
+              <span class="project-status status-active">Actif</span>
+            </div>
+          </div>
+          <h3>Automatisation Power Automate</h3>
+          <p>
+            Workflows d'automatisation des processus RH et logistiques.
+            Réduction significative des traitements manuels quotidiens
+            pour les équipes Eurovanille.
+          </p>
+          <div class="project-tags">
+            <span>Power Automate</span><span>SharePoint</span><span>Teams</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="150">
+          <div class="project-header">
+            <div class="project-icon">📱</div>
+            <div class="project-links">
+              <span class="project-status status-active">Actif</span>
+            </div>
+          </div>
+          <h3>Application Power Apps Métier</h3>
+          <p>
+            Développement d'applications Canvas pour les opérations terrain.
+            Saisie de données en temps réel, consultation des stocks,
+            suivi des interventions techniques.
+          </p>
+          <div class="project-tags">
+            <span>Power Apps</span><span>Dataverse</span><span>SharePoint</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="300">
+          <div class="project-header">
+            <div class="project-icon">🖥️</div>
+            <div class="project-links">
+              <span class="project-status status-active">Actif</span>
+            </div>
+          </div>
+          <h3>Scripts PowerShell d'administration</h3>
+          <p>
+            Bibliothèque de scripts automatisant la gestion des comptes
+            Entra ID, les déploiements Intune, les rapports de conformité
+            et les tâches de maintenance système.
+          </p>
+          <div class="project-tags">
+            <span>PowerShell</span><span>Entra ID</span><span>Intune</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="450">
+          <div class="project-header">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="https://ets-sevin.com" target="_blank" rel="noopener" class="project-status status-personal" style="text-decoration:none;">↗ Voir le site</a>
+            </div>
+          </div>
+          <h3>ETS Sevin — Site Vitrine</h3>
+          <p>
+            Conception et développement du site vitrine d'ETS Sevin.
+            Design professionnel, responsive, optimisé pour le référencement.
+            Stack HTML / CSS / JavaScript / PHP.
+          </p>
+          <div class="project-tags">
+            <span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="600">
+          <div class="project-header">
+            <div class="project-icon">🏭</div>
+            <div class="project-links">
+              <span class="project-status status-active">Actif</span>
+            </div>
+          </div>
+          <h3>Optimisation Chaînes de Production</h3>
+          <p>
+            Projets de digitalisation et d'amélioration continue.
+            Tableaux de bord de suivi en temps réel, analyse des goulots
+            d'étranglement, indicateurs de productivité.
+          </p>
+          <div class="project-tags">
+            <span>Power BI</span><span>Power Apps</span><span>Excel</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="750">
+          <div class="project-header">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <span class="project-status status-active">Actif</span>
+            </div>
+          </div>
+          <h3>Actions Cybersécurité</h3>
+          <p>
+            Participation aux campagnes de sensibilisation, gestion des
+            politiques de sécurité Intune, assistance lors d'incidents
+            et audits des accès et des droits.
+          </p>
+          <div class="project-tags">
+            <span>Intune</span><span>Entra ID</span><span>MFA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK ─────────────────────────────────────────── -->
+  <section class="section" id="techstack">
+    <div class="container">
+      <h2 class="section-title">Stack <span class="accent">technique</span></h2>
+      <div class="stack-marquee-wrap">
+        <div class="stack-marquee">
+          <div class="stack-track" id="stack-track">
+            <span class="stack-badge">PowerShell</span>
+            <span class="stack-badge">Power Apps</span>
+            <span class="stack-badge">Power Automate</span>
+            <span class="stack-badge">Microsoft Intune</span>
+            <span class="stack-badge">Entra ID</span>
+            <span class="stack-badge">PHP</span>
+            <span class="stack-badge">HTML5</span>
+            <span class="stack-badge">CSS3</span>
+            <span class="stack-badge">JavaScript</span>
+            <span class="stack-badge">Python</span>
+            <span class="stack-badge">SQL</span>
+            <span class="stack-badge">Java</span>
+            <span class="stack-badge">C#</span>
+            <span class="stack-badge">MySQL</span>
+            <span class="stack-badge">MariaDB</span>
+            <span class="stack-badge">Docker</span>
+            <span class="stack-badge">Nginx</span>
+            <span class="stack-badge">Apache</span>
+            <span class="stack-badge">Git</span>
+            <span class="stack-badge">GitHub</span>
+            <span class="stack-badge">Windows Server</span>
+            <span class="stack-badge">Linux</span>
+            <span class="stack-badge">Active Directory</span>
+            <span class="stack-badge">Microsoft 365</span>
+            <span class="stack-badge">SharePoint</span>
+            <span class="stack-badge">Power BI</span>
+            <span class="stack-badge">VPN / VLAN</span>
+            <span class="stack-badge">Firewall</span>
+            <!-- duplicate for infinite loop -->
+            <span class="stack-badge">PowerShell</span>
+            <span class="stack-badge">Power Apps</span>
+            <span class="stack-badge">Power Automate</span>
+            <span class="stack-badge">Microsoft Intune</span>
+            <span class="stack-badge">Entra ID</span>
+            <span class="stack-badge">PHP</span>
+            <span class="stack-badge">HTML5</span>
+            <span class="stack-badge">CSS3</span>
+            <span class="stack-badge">JavaScript</span>
+            <span class="stack-badge">Python</span>
+            <span class="stack-badge">SQL</span>
+            <span class="stack-badge">Java</span>
+            <span class="stack-badge">C#</span>
+            <span class="stack-badge">MySQL</span>
+            <span class="stack-badge">MariaDB</span>
+            <span class="stack-badge">Docker</span>
+            <span class="stack-badge">Nginx</span>
+            <span class="stack-badge">Apache</span>
+            <span class="stack-badge">Git</span>
+            <span class="stack-badge">GitHub</span>
+            <span class="stack-badge">Windows Server</span>
+            <span class="stack-badge">Linux</span>
+            <span class="stack-badge">Active Directory</span>
+            <span class="stack-badge">Microsoft 365</span>
+            <span class="stack-badge">SharePoint</span>
+            <span class="stack-badge">Power BI</span>
+            <span class="stack-badge">VPN / VLAN</span>
+            <span class="stack-badge">Firewall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────────── -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Con<span class="accent">tact</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Une question, un projet web, ou juste envie d'échanger
+            sur la tech ? N'hésitez pas à me contacter.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="c-label">Email</p>
+                <a href="mailto:lilianlevel62@gmail.com" class="c-value">lilianlevel62@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <p class="c-label">GitHub</p>
+                <a href="https://github.com/lilian-level" target="_blank" rel="noopener" class="c-value">github.com/lilian-level</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <p class="c-label">LinkedIn</p>
+                <a href="https://linkedin.com/in/lilian-level" target="_blank" rel="noopener" class="c-value">linkedin.com/in/lilian-level</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Envoyer le message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">LL<span class="dot">.</span></span>
+        <p>© <span id="footer-year"></span> Lilian Level — Tous droits réservés</p>
+        <p class="footer-made">Fait avec passion &#x2665;</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
